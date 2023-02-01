@@ -32,7 +32,7 @@ jobs:
         run: npm install sfdx-cli --global
     # Authorize SF Org
       - name: Authorize SF Org
-         run:sfdx force:auth:jwt:grant --clientid 3MVG9pRzvMkjMb6mQmwyTIqGh0POKHjFRtQ1jdeZ5mIkb7tIZghEBH45Ya3G1C2GR.qlVEmVfwY9xkzdAPa1j--jwtkeyfile server.key --username ronnieneworg@gmail.com --instanceurl https://suyati5-dev-ed.my.salesforce.com
+         run:sfdx force:auth:jwt:grant --clientid 3MVG9pRzvMkjMb6mQmwyTIqGh0POKHjFRtQ1jdeZ5mIkb7tIZghEBH45Ya3G1C2GR.qlVEmVfwY9xkzdAPa1j--jwtkeyfile ./buildfiles/server.key --username ronnieneworg@gmail.com --instanceurl https://suyati5-dev-ed.my.salesforce.com
       
       # Runs a single command using the runners shell
       - name: Run a one-line script
